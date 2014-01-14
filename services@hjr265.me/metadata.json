@@ -1,0 +1,8 @@
+{
+	"uuid": "services@hjr265.me",
+	"name": "Services",
+	"description": "Toggle common services on/off from a menu on the top panel",
+	"shell-version": [
+		"3.10.2.1"
+	]
+}
