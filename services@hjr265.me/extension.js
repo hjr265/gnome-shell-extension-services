@@ -8,6 +8,16 @@ const St = imports.gi.St;
 
 let SERVICES = [
 	{
+		name: 'docker',
+		label: 'Docker',
+		probes: [
+			{
+				type: 'systemd',
+				unit: 'docker.service'
+			}
+		]
+	},
+	{
 		name: 'mongodb',
 		label: 'MongoDB',
 		probes: [
@@ -96,7 +106,7 @@ Services.prototype = {
 				item.connect('toggled', function() {
 					switch(probe.type) {
 						case 'systemd':
-							GLib.spawn_command_line_async('sh -c "pkexec --user root systemctl ' + (active ? 'stop' : 'start') + ' ' + probe.unit + '; sleep 1; exit;"');
+							GLib.spawn_command_line_async('sh -c "pkexec --user root systemctl ' + (active ? 'stop' : 'start') + ' ' + probe.unit + '; exit;"');
 							break;
 					}
 				});
