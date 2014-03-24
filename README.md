@@ -16,7 +16,7 @@ A Gnome Shell Extension that allows you to toggle some common services on/off fr
 
     $ git clone git://github.com/hjr265/gnome-shell-extension-services.git
     $ cd gnome-shell-extension-services
-    # cp -r services@hjr265.me ~/.local/share/gnome-shell/extensions/
+    # cp -r services@hjr265.me ~/.local/share/gnome-shell/extensions/services@hjr265.me
 
 Restart Gnome Shell and enable the extension
 
