@@ -56,6 +56,16 @@ let SERVICES = [
 				unit: 'redis.service'
 			}
 		]
+	},
+	{
+		name: 'rethinkdb',
+		label: 'RethinkDB',
+		probes: [
+			{
+				type: 'systemd',
+				unit: 'rethinkdb@default.service'
+			}
+		]
 	}
 ];
 
