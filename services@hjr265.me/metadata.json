@@ -4,6 +4,8 @@
 	"description": "Toggle common services on/off from a menu on the top panel",
 	"shell-version": [
 		"3.10",
-		"3.12"
+		"3.12",
+		"3.14",
+		"3.16"
 	]
 }
