@@ -4,13 +4,15 @@ A Gnome Shell Extension that allows you to toggle some common services on/off fr
 
 ## Services
 
+- Docker
+- Elasticsearch
 - MongoDB
-
 - MySQL
-
 - PostgreSQL
-
 - Redis
+- RethinkDB
+- Samba (smbd/nscd)
+- SSHd
 
 ## Installation
 
