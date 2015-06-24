@@ -18,6 +18,16 @@ let SERVICES = [
 		]
 	},
 	{
+		name: 'elasticsearch',
+		label: 'Elasticsearch',
+		probes: [
+			{
+				type: 'systemd',
+				unit: 'elasticsearch.service'
+			}
+		]
+	},
+	{
 		name: 'mongodb',
 		label: 'MongoDB',
 		probes: [
@@ -66,7 +76,37 @@ let SERVICES = [
 				unit: 'rethinkdb@default.service'
 			}
 		]
-	}
+	},
+	{
+		name: 'smbd',
+		label: 'Samba SMBD',
+		probes: [
+			{
+				type: 'systemd',
+				unit: 'smbd.service'
+			}
+		]
+	},
+	{
+		name: 'nscd',
+		label: 'Samba NSCD',
+		probes: [
+			{
+				type: 'systemd',
+				unit: 'nscd.service'
+			}
+		]
+	},
+	{
+		name: 'ssh',
+		label: 'SSH',
+		probes: [
+			{
+				type: 'systemd',
+				unit: 'sshd.service'
+			}
+		]
+	},
 ];
 
 
